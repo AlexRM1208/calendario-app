@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Tipos de Calendários</title>
+
+  <meta
+    name="description"
+    content="Conheça calendários solares, lunares, lunissolares, civis e religiosos."
+  />
+
+  <link rel="stylesheet" href="estilo.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+
+  <aside class="app-sidebar" id="sidebar">
+    <div class="brand">
+      <div class="brand-mark">📅</div>
+      <div>
+        <strong>Calendário App</strong>
+        <small>tempo, datas e histórias</small>
+      </div>
+    </div>
+
+    <nav class="side-nav" aria-label="Menu principal">
+      <a href="index.html">Hoje</a>
+      <a href="historia.html">História</a>
+      <a class="active" href="tipos.html">Tipos</a>
+      <a href="curiosidades.html">Curiosidades</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+
+    <div class="sidebar-card">
+      <span>Explorar</span>
+      <strong>Filtros ativos</strong>
+      <small>Use os botões da página para filtrar os tipos.</small>
+    </div>
+  </aside>
+
+  <header class="mobile-header">
+    <a class="mobile-brand" href="index.html">📅 Calendário App</a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="sidebar">Menu</button>
+  </header>
+
+  <main class="app-main" id="conteudo">
+    <section class="page-header">
+      <p class="eyebrow">Tipos</p>
+      <h1>Nem todo calendário conta o tempo da mesma forma.</h1>
+      <p>
+        Alguns calendários seguem o Sol, outros seguem a Lua, e há sistemas que combinam
+        elementos solares e lunares.
+      </p>
+    </section>
+
+    <section class="filter-panel">
+      <button class="filter-button active" type="button" data-filter="todos">Todos</button>
+      <button class="filter-button" type="button" data-filter="solar">Solares</button>
+      <button class="filter-button" type="button" data-filter="lunar">Lunares</button>
+      <button class="filter-button" type="button" data-filter="lunissolar">Lunissolares</button>
+      <button class="filter-button" type="button" data-filter="civil">Civis</button>
+    </section>
+
+    <section class="type-grid">
+      <article class="type-card" data-category="solar civil">
+        <span class="type-tag">Solar</span>
+        <h2>Calendário gregoriano</h2>
+        <p>
+          É o calendário civil mais utilizado atualmente. Ele organiza o ano em 12 meses
+          e usa regras de ano bissexto para manter maior alinhamento com o ano solar.
+        </p>
+      </article>
+
+      <article class="type-card" data-category="solar">
+        <span class="type-tag">Solar</span>
+        <h2>Calendário juliano</h2>
+        <p>
+          Criado a partir da reforma romana de Júlio César, foi muito importante para a
+          história ocidental e serviu de base para a reforma gregoriana.
+        </p>
+      </article>
+
+      <article class="type-card" data-category="lunar">
+        <span class="type-tag">Lunar</span>
+        <h2>Calendários lunares</h2>
+        <p>
+          Baseiam-se nos ciclos da Lua. Os meses costumam acompanhar as fases lunares,
+          o que pode gerar diferença em relação ao ano solar.
+        </p>
+      </article>
+
+      <article class="type-card" data-category="lunissolar">
+        <span class="type-tag">Lunissolar</span>
+        <h2>Calendários lunissolares</h2>
+        <p>
+          Tentam combinar meses lunares com ajustes para acompanhar o ciclo solar.
+          Por isso, podem usar meses extras em determinados anos.
+        </p>
+      </article>
+
+      <article class="type-card" data-category="civil">
+        <span class="type-tag">Civil</span>
+        <h2>Calendário administrativo</h2>
+        <p>
+          Usado para organizar documentos, contratos, escolas, empresas, feriados,
+          impostos, prazos e planejamento público.
+        </p>
+      </article>
+
+      <article class="type-card" data-category="lunar lunissolar">
+        <span class="type-tag">Cultural</span>
+        <h2>Calendários tradicionais</h2>
+        <p>
+          Diversas culturas mantêm calendários próprios para festas, rituais,
+          memórias históricas e celebrações religiosas.
+        </p>
+      </article>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
