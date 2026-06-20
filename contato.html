@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Contato - Calendário App</title>
+
+  <meta
+    name="description"
+    content="Entre em contato com o projeto Calendário App."
+  />
+
+  <link rel="stylesheet" href="estilo.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+
+  <aside class="app-sidebar" id="sidebar">
+    <div class="brand">
+      <div class="brand-mark">📅</div>
+      <div>
+        <strong>Calendário App</strong>
+        <small>tempo, datas e histórias</small>
+      </div>
+    </div>
+
+    <nav class="side-nav" aria-label="Menu principal">
+      <a href="index.html">Hoje</a>
+      <a href="historia.html">História</a>
+      <a href="tipos.html">Tipos</a>
+      <a href="curiosidades.html">Curiosidades</a>
+      <a class="active" href="contato.html">Contato</a>
+    </nav>
+
+    <div class="sidebar-card">
+      <span>Projeto</span>
+      <strong>GitHub Pages</strong>
+      <small>Site estático pronto para publicação.</small>
+    </div>
+  </aside>
+
+  <header class="mobile-header">
+    <a class="mobile-brand" href="index.html">📅 Calendário App</a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="sidebar">Menu</button>
+  </header>
+
+  <main class="app-main" id="conteudo">
+    <section class="page-header">
+      <p class="eyebrow">Contato</p>
+      <h1>Envie sua sugestão para o Calendário App.</h1>
+      <p>
+        Use o formulário abaixo para simular o envio de uma mensagem. Ele valida os campos
+        usando JavaScript puro.
+      </p>
+    </section>
+
+    <section class="contact-layout">
+      <form class="contact-form" id="contactForm" novalidate>
+        <div class="field">
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" name="nome" placeholder="Seu nome" autocomplete="name" required />
+          <small class="error" id="nomeError"></small>
+        </div>
+
+        <div class="field">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" autocomplete="email" required />
+          <small class="error" id="emailError"></small>
+        </div>
+
+        <div class="field">
+          <label for="tema">Tema</label>
+          <select id="tema" name="tema" required>
+            <option value="">Selecione</option>
+            <option value="historia">História dos calendários</option>
+            <option value="curiosidades">Curiosidades</option>
+            <option value="correcao">Correção de informação</option>
+            <option value="outro">Outro</option>
+          </select>
+          <small class="error" id="temaError"></small>
+        </div>
+
+        <div class="field">
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" name="mensagem" rows="6" placeholder="Digite sua mensagem..." required></textarea>
+          <small class="error" id="mensagemError"></small>
+        </div>
+
+        <button class="btn primary" type="submit">Enviar</button>
+
+        <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+      </form>
+
+      <aside class="contact-card">
+        <h2>Diferenciais deste projeto</h2>
+
+        <ul>
+          <li>Layout estilo dashboard</li>
+          <li>Sem Bootstrap</li>
+          <li>Sem jQuery</li>
+          <li>Calendário gerado por JavaScript</li>
+          <li>Filtros interativos</li>
+          <li>Quiz com perguntas</li>
+          <li>Pronto para GitHub Pages</li>
+        </ul>
+      </aside>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
