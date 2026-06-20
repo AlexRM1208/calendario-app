@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Curiosidades sobre Calendários</title>
+
+  <meta
+    name="description"
+    content="Curiosidades sobre calendários, meses, semanas, anos bissextos e organização do tempo."
+  />
+
+  <link rel="stylesheet" href="estilo.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+
+  <aside class="app-sidebar" id="sidebar">
+    <div class="brand">
+      <div class="brand-mark">📅</div>
+      <div>
+        <strong>Calendário App</strong>
+        <small>tempo, datas e histórias</small>
+      </div>
+    </div>
+
+    <nav class="side-nav" aria-label="Menu principal">
+      <a href="index.html">Hoje</a>
+      <a href="historia.html">História</a>
+      <a href="tipos.html">Tipos</a>
+      <a class="active" href="curiosidades.html">Curiosidades</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+
+    <div class="sidebar-card">
+      <span>Desafio</span>
+      <strong>Quiz do tempo</strong>
+      <small>Teste seus conhecimentos nesta página.</small>
+    </div>
+  </aside>
+
+  <header class="mobile-header">
+    <a class="mobile-brand" href="index.html">📅 Calendário App</a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="sidebar">Menu</button>
+  </header>
+
+  <main class="app-main" id="conteudo">
+    <section class="page-header">
+      <p class="eyebrow">Curiosidades</p>
+      <h1>O calendário parece simples, mas guarda várias histórias curiosas.</h1>
+      <p>
+        Meses com nomes antigos, anos bissextos, semanas de sete dias e reformas históricas
+        mostram que contar o tempo também é uma construção cultural.
+      </p>
+    </section>
+
+    <section class="curiosity-grid">
+      <article class="curiosity-card">
+        <span>🌙</span>
+        <h2>Lua e meses</h2>
+        <p>
+          A ideia de mês tem relação histórica com ciclos lunares em muitos povos antigos.
+        </p>
+      </article>
+
+      <article class="curiosity-card">
+        <span>➕</span>
+        <h2>Anos bissextos</h2>
+        <p>
+          Anos bissextos ajudam a corrigir a diferença entre o calendário civil e o tempo
+          real de translação da Terra ao redor do Sol.
+        </p>
+      </article>
+
+      <article class="curiosity-card">
+        <span>🏛️</span>
+        <h2>Nomes romanos</h2>
+        <p>
+          Muitos nomes de meses usados atualmente vieram da tradição romana.
+        </p>
+      </article>
+
+      <article class="curiosity-card">
+        <span>🧭</span>
+        <h2>Tempo e poder</h2>
+        <p>
+          Controlar calendários sempre foi importante para governos, religiões e sociedades.
+        </p>
+      </article>
+    </section>
+
+    <section class="quiz-panel">
+      <div>
+        <p class="eyebrow">Quiz rápido</p>
+        <h2>Teste seu conhecimento</h2>
+        <p id="quizQuestion">Carregando pergunta...</p>
+      </div>
+
+      <div class="quiz-options" id="quizOptions"></div>
+
+      <p class="quiz-result" id="quizResult" role="status" aria-live="polite"></p>
+
+      <button class="btn secondary" type="button" id="nextQuestion">Próxima pergunta</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
