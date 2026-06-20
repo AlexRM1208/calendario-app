@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Calendário App - Início</title>
+
+  <meta
+    name="description"
+    content="Calendário App: um site sobre calendários, história, tipos, curiosidades e organização do tempo."
+  />
+
+  <link rel="stylesheet" href="estilo.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+
+  <aside class="app-sidebar" id="sidebar">
+    <div class="brand">
+      <div class="brand-mark">📅</div>
+      <div>
+        <strong>Calendário App</strong>
+        <small>tempo, datas e histórias</small>
+      </div>
+    </div>
+
+    <nav class="side-nav" aria-label="Menu principal">
+      <a class="active" href="index.html">Hoje</a>
+      <a href="historia.html">História</a>
+      <a href="tipos.html">Tipos</a>
+      <a href="curiosidades.html">Curiosidades</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+
+    <div class="sidebar-card">
+      <span>Dia do ano</span>
+      <strong id="dayOfYear">--</strong>
+      <div class="progress">
+        <div class="progress-bar" id="yearProgressBar"></div>
+      </div>
+      <small id="yearProgressText">Calculando progresso...</small>
+    </div>
+  </aside>
+
+  <header class="mobile-header">
+    <a class="mobile-brand" href="index.html">📅 Calendário App</a>
+
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="sidebar">
+      Menu
+    </button>
+  </header>
+
+  <main class="app-main" id="conteudo">
+    <section class="hero-panel">
+      <div>
+        <p class="eyebrow">Organização do tempo</p>
+        <h1>Um site sobre calendários, datas e a forma como medimos o tempo.</h1>
+        <p>
+          Explore calendários, conheça sua história, veja curiosidades e acompanhe o mês atual
+          em uma interface inspirada em aplicativos de agenda.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn primary" href="historia.html">Conhecer a história</a>
+          <a class="btn ghost" href="#calendario">Ver calendário</a>
+        </div>
+      </div>
+
+      <div class="date-widget">
+        <span>Hoje é</span>
+        <strong id="todayText">Carregando...</strong>
+        <small id="currentTime">--:--</small>
+      </div>
+    </section>
+
+    <section class="dashboard-grid" id="calendario">
+      <article class="calendar-panel">
+        <div class="panel-header">
+          <div>
+            <p class="eyebrow">Calendário interativo</p>
+            <h2 id="calendarTitle">Mês atual</h2>
+          </div>
+
+          <div class="calendar-controls">
+            <button type="button" id="prevMonth" aria-label="Mês anterior">‹</button>
+            <button type="button" id="nextMonth" aria-label="Próximo mês">›</button>
+          </div>
+        </div>
+
+        <div class="calendar-grid" id="calendarGrid" aria-label="Calendário mensal"></div>
+      </article>
+
+      <aside class="mini-panel">
+        <p class="eyebrow">Resumo</p>
+        <h2>O que você encontra aqui?</h2>
+
+        <ul class="feature-list">
+          <li>
+            <span>01</span>
+            História dos calendários
+          </li>
+          <li>
+            <span>02</span>
+            Calendários solares, lunares e lunissolares
+          </li>
+          <li>
+            <span>03</span>
+            Curiosidades sobre meses, semanas e anos bissextos
+          </li>
+          <li>
+            <span>04</span>
+            Quiz e interações em JavaScript
+          </li>
+        </ul>
+      </aside>
+    </section>
+
+    <section class="content-section">
+      <div class="section-title">
+        <p class="eyebrow">Cards rápidos</p>
+        <h2>Como usamos calendários no dia a dia?</h2>
+      </div>
+
+      <div class="info-grid">
+        <article class="info-card">
+          <div class="icon">🗓️</div>
+          <h3>Planejamento</h3>
+          <p>
+            Calendários ajudam a organizar compromissos, estudos, eventos, viagens,
+            entregas e rotinas pessoais.
+          </p>
+        </article>
+
+        <article class="info-card">
+          <div class="icon">🌍</div>
+          <h3>Cultura</h3>
+          <p>
+            Povos diferentes criaram formas próprias de contar dias, meses e anos,
+            muitas vezes ligadas à agricultura, religião e astronomia.
+          </p>
+        </article>
+
+        <article class="info-card">
+          <div class="icon">☀️</div>
+          <h3>Astronomia</h3>
+          <p>
+            Muitos calendários surgiram da observação do Sol, da Lua, das estações
+            e dos ciclos naturais.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="quote-panel">
+      <div>
+        <p class="eyebrow">Frase aleatória</p>
+        <blockquote id="quoteBox">
+          O tempo organiza a vida, mas também revela a história das civilizações.
+        </blockquote>
+      </div>
+
+      <button class="btn secondary" type="button" id="newQuote">Nova frase</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
